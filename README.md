@@ -4,7 +4,7 @@
 
 Take a baseline installation of a Linux distribution on a virtual machine and prepare it to host your web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
 
-- IP address: 35.167.27.204
+- IP address: 18.224.65.159
 - Accessible SSH port: 2200
 - Application URL: http://18.224.65.159/ or http://ec2-18-224-65-159.us-east-2.compute.amazonaws.com/
 
@@ -422,7 +422,7 @@ following lines to configure the virtual host:
 - Reload Apache: `sudo service apache2 reload`.
 
 **Resource**
-- Medium, [Python 3.5, Flask, Apache2, Mod_WSGI3 on Ubuntu 16.04)](https://medium.com/@esteininger/python-3-5-flask-apache2-mod-wsgi3-on-ubuntu-16-04-67894abf9f70)
+- Medium, [Python 3.5, Flask, Apache2, Mod_WSGI3 on Ubuntu 16.04](https://medium.com/@esteininger/python-3-5-flask-apache2-mod-wsgi3-on-ubuntu-16-04-67894abf9f70)
 - [Getting Flask to use Python3](https://stackoverflow.com/questions/30642894/getting-flask-to-use-python3-apache-mod-wsgi)
 
 
@@ -478,7 +478,7 @@ activate the virtual environment: `. venv3/bin/activate`.
 - Deactivate the virtual environment: `deactivate`.
 
 
-### 22.  Disable the default Apache site
+### 22.  Disable default Apache site
 
 - Disable the default Apache site: `sudo a2dissite 000-default.conf`.
 
@@ -491,7 +491,7 @@ activate the virtual environment: `. venv3/bin/activate`.
 - Reload Apache: `sudo service apache2 reload`.
 
 
-### 23.  Launch Application
+### 23.  Final Steps
 
 - Change the ownership of the project directories: `sudo chown -R www-data:www-data catalog/`.
 - Restart Apache again: `sudo service apache2 restart`.
